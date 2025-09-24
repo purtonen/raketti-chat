@@ -8,7 +8,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: 'as-raketti-chat-backend' # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: 'backend/dist' # set this to the path of your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: 'backend' # set this to the path of your web app project, defaults to the repository root
 
 jobs:
   build-and-deploy:
@@ -32,9 +32,6 @@ jobs:
         run: |
           npm ci
           npm run build
-          cp package*.json dist
-          cd dist
-          npm ci --omit=dev
 
       - name: Login to Azure
         uses: azure/login@v2
