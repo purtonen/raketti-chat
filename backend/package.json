@@ -2,13 +2,14 @@
   "name": "raketti-chat-backend",
   "version": "1.0.0",
   "description": "Backend for Raketti Chat",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --env-file=.env -r ts-node/register src/server.ts ",
     "start": "node -r ./dist/server.js",
     "watch": "nodemon -r dotenv/config --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "postbuild": "cp package.json dist/package-lock.json && cd dist && npm ci --only=production"
   },
   "author": "",
   "license": "ISC",
