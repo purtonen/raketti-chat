@@ -28,9 +28,11 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: npm build
+      - name: npm install and build
         run: |
+          npm ci --omit=dev
           npm run build --if-present
+          cp -R node_modules dist/node_modules
 
       - name: Login to Azure
         uses: azure/login@v2
