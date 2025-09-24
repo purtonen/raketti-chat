@@ -32,7 +32,7 @@ jobs:
         run: |
           npm ci
           npm run build
-          cp package-lock.json dist/package-lock.json
+          cp package*.json dist
           cd dist
           npm ci --omit=dev
 
