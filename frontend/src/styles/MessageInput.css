@@ -1,0 +1,37 @@
+.message-input {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.message-input button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #0070f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.message-input-username {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.message-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background: #fff;
+}

@@ -1,0 +1,15 @@
+.message {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: #e6f7ff;
+  display: block;
+  width: fit-content;
+  max-width: 90%;
+  word-break: break-word;
+}
+
+.message.own-message {
+  background: #d9f7be;
+  margin-left: auto;
+}
