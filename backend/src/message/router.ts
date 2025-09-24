@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getMessages, addMessage } from "message/service";
+import { getMessages, addMessage } from "./service";
 
 const router = Router();
 

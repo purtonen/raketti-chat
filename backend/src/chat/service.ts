@@ -1,5 +1,4 @@
 import { WebPubSubServiceClient } from "@azure/web-pubsub";
-import { DefaultAzureCredential } from "@azure/identity";
 
 const connectionString = process.env.WPS_CONNECTION_STRING ?? "";
 

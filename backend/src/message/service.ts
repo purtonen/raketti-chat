@@ -1,4 +1,4 @@
-import { getMessages as repoGetMessages, addMessage as repoAddMessage } from "message/repository";
+import { getMessages as repoGetMessages, addMessage as repoAddMessage } from "./repository";
 
 export async function getMessages() {
   return repoGetMessages();

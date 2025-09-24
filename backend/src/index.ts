@@ -1,9 +1,9 @@
 import 'dotenv/config';
 
 import express from 'express';
-import chatRouter from 'chat/router';
-import userRouter from 'user/router';
-import messageRouter from 'message/router';
+import chatRouter from './chat/router';
+import userRouter from './user/router';
+import messageRouter from './message/router';
 
 const app = express();
 const port = process.env.PORT || 3000;

@@ -1,5 +1,5 @@
 import express, { Router } from "express";
-import { getAccessToken } from "chat/service";
+import { getAccessToken } from "./service";
 
 const router = Router();
 
