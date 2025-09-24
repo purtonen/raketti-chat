@@ -17,7 +17,7 @@ Raketti Chat is a real-time chat application built with Node.js and Azure Web Pu
 ### Installation & Running
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/raketti-chat.git
+   git clone https://github.com/purtonen/raketti-chat.git
    cd raketti-chat
    ```
 2. Install dependencies in both backend and frontend:
