@@ -57,9 +57,6 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_AEE74A6E6703445C8E03687025D9FF0C }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EC0DB59A39DE4325B02DDD1C002DDA19 }}
 
-      - name: list files for debugging
-        run: ls -al ./node-app
-
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
