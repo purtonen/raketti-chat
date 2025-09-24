@@ -30,9 +30,11 @@ jobs:
 
       - name: npm install and build
         run: |
+          npm ci
+          npm run build
+          cp package-lock.json dist/package-lock.json
+          cd dist
           npm ci --omit=dev
-          npm run build --if-present
-          cp -R node_modules dist/node_modules
 
       - name: Login to Azure
         uses: azure/login@v2
