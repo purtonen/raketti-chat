@@ -1,5 +1,3 @@
-import 'dotenv/config';
-
 import express from 'express';
 import chatRouter from './chat/router';
 import userRouter from './user/router';
