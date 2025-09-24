@@ -28,9 +28,8 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: npm install and build
+      - name: npm build
         run: |
-          npm install
           npm run build --if-present
 
       - name: Login to Azure
